@@ -2,9 +2,11 @@
 
 ![Preview: 480 frames at 4 fps, one revolution in 120 seconds](preview.gif)
 
-A drawing of the pattern, not a photograph.
+
 
 C.120 is a rainbow movie for a Twinkly RGBW string. Two rainbows run along the LEDs. The file is 2160 frames at 18 fps, so one pass through the colour wheel takes two minutes if the string plays that frame rate. The white channel is left off. After the upload, the controller plays the movie with this computer off.
+
+An example gif of the pattern in action is above ⬆️
 
 `c120.py` talks to the string on your LAN. It uploads only when you pass `--yes`, and only when movie storage is empty. It does not delete a movie, update firmware, or change Wi-Fi. `plan` does not use the network. `inspect` and `upload` log in, which ends any other app's session on the string. The Twinkly app has to connect again.
 
